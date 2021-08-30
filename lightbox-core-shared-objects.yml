@@ -1,4 +1,4 @@
-definitions:
+schemas:
   Structure.Info:
       title: "StructureInfo"
       type: "object"
@@ -22,4 +22,9 @@ definitions:
       postCode:
         type: "string"
       countryCode:
-        $ref: "#/definitions/CountryCode"
+        $ref: "#/schemas/CountryCode"
+  Geometry:
+      type: "object"
+      properties:
+        wkt:
+          type: "string"
