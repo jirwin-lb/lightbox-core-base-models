@@ -28,3 +28,22 @@ schemas:
       properties:
         wkt:
           type: "string"
+  Location:
+      type: "object"
+      description: "ISO-19160-1 address components, geometry of the location expressed in WKT, and geometry of a representative point within the location expressed in latitude, longitude and WKT"
+      allOf: 
+        - $ref: "#/schemas/AddressParts"
+      properties:
+        geometry:
+          $ref: "#/schemas/Geometry"
+        representativePoint:
+          type: "object"
+          properties:
+            longitude:
+              type: "string"
+              pattern: "^[-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)$"
+            latitude:
+              type: "string"
+              pattern: "^[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?)$"
+            geometry:
+              $ref: "#/schemas/Geometry"
