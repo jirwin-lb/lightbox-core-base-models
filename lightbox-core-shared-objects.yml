@@ -37,6 +37,8 @@ schemas:
         geometry:
           $ref: "#/schemas/Geometry"
         representativePoint:
+          $ref: "#/schemas/RepresentativePoint"
+  RepresentativePoint:
           type: "object"
           properties:
             longitude:
