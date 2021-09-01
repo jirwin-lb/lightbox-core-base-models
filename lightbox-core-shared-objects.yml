@@ -26,6 +26,7 @@ components:
       enum: ["AL","AK","AS","AZ","AR","CA","CO","CT","DE","DC","FM","FL","GA","GU","HI","ID","IL","IN","IA","KS","KY","LA","ME","MH","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","MP","OH","OK","OR","PW","PA","PR","RI","SC","SD","TN","TX","UT","VT","VI","VA","WA","WV","WI","WY","AE","AP","AA","AB","BC","MB","NB","NL","NT","NS","NU","ON","PE","QC","SK","YT"]
 
     AddressParts:
+      name: "AddressParts"
       type: "object"
       properties:
         streetAddress:
@@ -46,6 +47,7 @@ components:
             type: "string"
     
     Location:
+        name: "Location"
         type: "object"
         description: "ISO-19160-1 address components, geometry of the location expressed in WKT, and geometry of a representative point within the location expressed in latitude, longitude and WKT"
         allOf: 
@@ -55,6 +57,7 @@ components:
             $ref: "#/components/schemas/Geometry"
   
     RepresentativePoint:
+            name: "RepresentativePoint"
             type: "object"
             description: "A representative point within the boundary"
             properties:
