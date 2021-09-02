@@ -31,11 +31,11 @@ components:
       properties:
         streetAddress:
           type: "string"
-        localityName:
+        city:
           type: "string"
         regionCode:
           $ref: "#/components/schemas/RegionCode"
-        postCode:
+        postalCode:
           type: "string"
         countryCode:
           $ref: "#/components/schemas/CountryCode"
