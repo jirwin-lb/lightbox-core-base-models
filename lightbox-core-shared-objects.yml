@@ -45,6 +45,10 @@ components:
           type: "string"
           nullable: true
           description: "The county or county equivalent in which the parcel resides."
+        subdivision:
+          type: "string"
+          description: "The name of the subdivision, plat or tract in which the property is located."
+          nullable: true
         
     Geometry:
         type: "object"
