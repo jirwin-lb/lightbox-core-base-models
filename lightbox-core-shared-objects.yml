@@ -41,7 +41,11 @@ components:
           type: "string"
         countryCode:
           $ref: "#/components/schemas/CountryCode"
-    
+        county:
+          type: "string"
+          nullable: true
+          description: "The county or county equivalent in which the parcel resides."
+        
     Geometry:
         type: "object"
         properties:
