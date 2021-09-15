@@ -33,7 +33,7 @@ components:
       properties:
         streetAddress:
           type: "string"
-        city:
+        locality:
           type: "string"
         regionCode:
           $ref: "#/components/schemas/RegionCode"
