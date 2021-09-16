@@ -1,4 +1,4 @@
- parameters:
+ request:
   Address:
     name: "text"
     in: "query"
